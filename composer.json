@@ -1,0 +1,23 @@
+{
+    "name": "k1low/multi_validatable",
+    "description": "Multi validation set plugin for CakePHP.",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "validation"],
+    "homepage": "https://github.com/k1LoW/MultiValidatable",
+    "license": "MIT",
+    "authors": [
+        {
+                "name": "Dardo Sordi",
+                "homepage": "https://github.com/dardosordi",
+                "role": "Author"
+            },
+        {
+                "name": "Ken'ichiro Oyama",
+                "homepage": "https://github.com/k1LoW",
+                "role": "Maintainer"
+            }
+    ],
+    "require": {
+        "composer/installers": "*"
+    }
+}
