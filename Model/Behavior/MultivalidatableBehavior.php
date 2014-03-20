@@ -19,7 +19,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      */
     private $__defaultRules = array();
 
-    public function setUp(&$model, $config = array()) {
+    public function setUp(Model $model, $config = array()) {
         $this->__defaultRules[$model->name] = $model->validate;
     }
 
@@ -32,7 +32,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      * @param Object $model
      * @param Mixed $rules
      */
-    public function setValidation(&$model, $rules = array()) {
+    public function setValidation(Model $model, $rules = array()) {
         if (is_array($rules)){
             $this->_setValidation($model, $rules);
         } elseif (isset($model->validationSets[$rules])) {
@@ -45,7 +45,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      *
      * @param Object $model
      */
-    public function restoreValidation(&$model) {
+    public function restoreValidation(Model $model) {
         $model->validate = $this->__oldRules[$model->name];
     }
 
@@ -54,7 +54,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      *
      * @param Object $model
      */
-    public function restoreDefaultValidation(&$model) {
+    public function restoreDefaultValidation(Model $model) {
         $model->validate = $this->__defaultRules[$model->name];
     }
 
@@ -64,7 +64,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      * @param Object $model
      * @param Array $rules
      */
-    public function mergeValidation(&$model, $rules){
+    public function mergeValidation(Model $model, $rules){
         if (!$rules || !isset($this->validationSets[$rules])) {
             return false;
         }
@@ -78,7 +78,7 @@ class MultivalidatableBehavior extends ModelBehavior {
      * @param Object $model
      * @param Array $rules
      */
-    private function _setValidation(&$model, $rules) {
+    private function _setValidation(Model $model, $rules) {
         $this->__oldRules[$model->name] = $model->validate;
         $model->validate = $rules;
     }
