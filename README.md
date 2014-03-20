@@ -1,4 +1,4 @@
-# MultiValidatable
+# Multivalidatable
 
 Multi validation set plugin for CakePHP.
 

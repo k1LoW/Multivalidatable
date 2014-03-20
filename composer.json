@@ -1,9 +1,9 @@
 {
-    "name": "k1low/multi_validatable",
+    "name": "k1low/multivalidatable",
     "description": "Multi validation set plugin for CakePHP.",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "validation"],
-    "homepage": "https://github.com/k1LoW/MultiValidatable",
+    "homepage": "https://github.com/k1LoW/Multivalidatable",
     "license": "MIT",
     "authors": [
         {
