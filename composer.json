@@ -7,15 +7,15 @@
     "license": "MIT",
     "authors": [
         {
-                "name": "Dardo Sordi",
-                "homepage": "https://github.com/dardosordi",
-                "role": "Author"
-            },
+            "name": "Dardo Sordi",
+            "homepage": "https://github.com/dardosordi",
+            "role": "Author"
+        },
         {
-                "name": "Ken'ichiro Oyama",
-                "homepage": "https://github.com/k1LoW",
-                "role": "Maintainer"
-            }
+            "name": "Ken'ichiro Oyama",
+            "homepage": "https://github.com/k1LoW",
+            "role": "Maintainer"
+        }
     ],
     "require": {
         "composer/installers": "*"
